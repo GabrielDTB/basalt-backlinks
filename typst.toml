@@ -1,0 +1,12 @@
+[package]
+name = "backlinks"
+version = "0.1.0"
+entrypoint = "src/exports.typ"
+authors = ["Gabriel Talbert Bunt"]
+license = "MIT"
+description = "Generate and get backlinks."
+repository = "https://github.com/GabrielDTB/typst-backlinks"
+keywords = [
+  "link",
+  "backlink"
+]
