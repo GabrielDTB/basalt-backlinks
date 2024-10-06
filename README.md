@@ -1,8 +1,8 @@
-A Typst package for generating and getting backlinks. 
+A Typst package for generating and getting backlinks.
 
 # Setup
 ```typ
-#import "@preview/backlinks:0.1.0"
+#import "@preview/basalt-backlinks:0.1.0" as backlinks
 #show link: backlinks.generate
 ```
 

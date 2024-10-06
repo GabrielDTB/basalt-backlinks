@@ -1,4 +1,4 @@
-#let package_name = "backlinks"
+#let package_name = "basalt-backlinks"
 #let package_uuid = "8cfa7814-461b-4cd7-8779-8e8b334e3b95"
 #let prefix = package_uuid + ":" + package_name + ":"
 
