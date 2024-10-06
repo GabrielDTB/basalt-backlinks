@@ -10,9 +10,15 @@ A Typst package for generating and getting backlinks.
 ```typ
 Here's some content I want to link to. <linktome>
 
+#pagebreak()
+
 #link(<linktome>)[I'm linking to the content.]
 
+#pagebreak()
+
 #link(<linktome>)[I'm also linking to the content!]
+
+#pagebreak()
 
 #context {
   let backs = backlinks.get(<linktome>)
