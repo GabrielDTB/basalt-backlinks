@@ -1,1 +1,1 @@
-#import "backlinks": generate, get
+#import "backlinks.typ": generate, get
