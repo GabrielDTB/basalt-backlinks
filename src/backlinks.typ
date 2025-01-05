@@ -1,21 +1,23 @@
 #let package-name = "basalt-backlinks"
 #let package-uuid = "8cfa7814-461b-4cd7-8779-8e8b334e3b95"
-#let prefix = package-uuid + ":" + package-name + ":"
+#let prefix = package-name + ":" + package-uuid + ":"
 
 /// Show rule for generating backlinks.
 ///
-/// #show link: backlinks.generate
-#let generate(it) = {
-  if type(it.dest) != label {
-    return it
-  }
+/// #show: backlinks.generate
+#let generate(body) = {
+  show link: it => {
+    if type(it.dest) != label {
+      return it
+    }
 
-  let target = str(it.dest)
-  return [
-    #it
-    #metadata(it.body)
-    #label(prefix + target)
-  ]
+    it
+    [
+      #metadata(it.body)
+      #label(prefix + str(it.dest))
+    ]
+  }
+  body
 }
 
 /// Get an array of the locations of links
